@@ -1,0 +1,334 @@
+/*  
+Theme Name: SMZDK
+Theme URI: http://www.smzdk.net.cn
+Description: This is my theme for a smzdk.net.cn.
+Version: 1.0
+Author: keleLi
+Author URI: http://www.oneknock.cn
+*/
+html body, h1, h2, h3, h4, h5, h6,p{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "microsoft yahei", "Helvetica","Georgia";
+	font-size: 14px;
+	vertical-align: top;
+	background: #f1f1f1;
+}
+/*头部h1样式*/
+#head-top h1{
+	display: inline-block;
+	font-family: Georgia, Sans-serif;
+	font-size: 24px;
+	color: #040B08;
+	padding: 10px 0px 11px 0px;
+}
+/*网站标题去除默认样式，设置颜色*/
+#head-top > h1 > a{
+	text-decoration: none;
+	color:#030803
+}
+/*首页，侧边栏h2样式*/
+#sidebar h2{
+	font-family: Georgia, Sans-serif;
+	font-size: 18px;
+	padding: 0 0 10px 0;
+}
+/*header样式*/
+#header{
+	width: 100%;
+	margin-bottom: 20px;
+	background: #FFFFFF;
+}
+#head-top{
+	width: 1200px;
+	margin: 0 auto;
+}
+/*副标题行内元素，左外边距设置*/
+#description{
+	display: inline-block;
+	margin-left: 12px;
+	color:#666;
+}
+/*导航菜单设置*/
+.menu-top-container{
+	float: right;
+}
+#menu-top{
+	list-style: none;
+	display: block;
+}
+#menu-top > li{
+	display: block;
+	float: left;
+	position: relative;
+	top: -14px;
+	width: 8em;
+	text-align: center;
+	min-height: 52px;
+	line-height: 52px;
+	
+}
+#menu-top > li > a{
+	font-family: "microsoft yahei";
+	font-size: 18px;
+	color: #666;
+	display: block;
+	text-decoration: none;
+	line-height: 52px;
+	
+}
+
+/*二级导航栏样式*/
+.sub-menu{
+	text-align: left;
+    position: absolute;
+    top: 51px;
+    min-width: 100%;
+    z-index: 10;
+    display: none;
+    font-size: 14px;
+    border: 1px solid #D8D8D8;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding-left: 0px;
+    background: gray;
+}
+.sub-menu > li{
+	float: none;
+    display: block;
+    height: 35px;
+    min-height: 35px;
+    text-align: center;
+    border-bottom: 1px solid #E7E7E7;
+    background: #fff;
+}
+.sub-menu > li > a{
+	font-family: "microsoft yahei";
+	font-size: 18px;
+	color: #666;
+	text-decoration: none;
+	line-height: 35px;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+/*导航栏首页高亮显示*/
+#menu-top > li:first-child > a{
+	background: #666;
+	color: #fff;
+}
+
+/*鼠标滑过背景字体颜色过渡变换*/
+#menu-top > li > a:hover{
+	color: #FFFFFF;
+	background: #666;
+	transition: 0.3s;
+}
+.sub-menu > li > a:hover{
+	color: #fff;
+	background: #666;
+	transition: 0.3s;
+}
+
+/*herader结束*/
+
+
+#wrapper{
+	width: 1200px;
+	overflow: hidden;
+	margin: auto;
+}
+
+/*幻灯片*/
+.com_box {
+	width:627px;
+	height:279px;
+	overflow:hidden;
+	position:relative;
+	margin-bottom: 20px;
+	}
+.com_box img{
+	width:100%;
+	height:100%;
+	}
+.com_box ul.title li.on {
+	background:#3598db;
+	}
+.com_box ul.title {
+	position:absolute;
+	bottom:10px;
+	right:5px;
+	z-index:9;
+	}
+.com_box ul.title li
+{
+	counter-increment:listxh;
+	display:inline-block;
+	border-radius:12px;
+	background: #000;
+	}
+.com_box ul.title li:before{
+	content:counter(listxh);
+	display:inline-block;
+	text-align:center;
+	color:#fff;
+	width:24px;
+	height:24px;
+	line-height:24px;
+	font-weight:600;
+	font-size:11px;
+	font-family: "微软雅黑";
+	}
+/*leftbox*/
+#leftbox{
+	width: 70%;
+	float: left;
+	overflow: hidden;
+	border-radius: 10px;
+}
+/*文章右侧整体行内元素，宽度设置*/
+.post-right{
+	display:inline-block ;
+	width: 70%;
+}
+/*文章h2标题内外边距*/
+.post-right > h2{
+	padding-top: 5px;
+	margin-bottom: 5px;
+}
+/*文章摘要样式防止文字溢出*/
+.post-right > a > p{
+	margin: 0px;
+	padding: 0px 10px;
+}
+/*文章摘要去除下划线*/
+.post-right a{
+	text-decoration: none;
+}
+/*文章摘要高度设置*/
+.post-con{
+	height: 5em;
+	overflow: hidden;
+}
+/*日志元数据样式*/
+.postmetadata{
+	width: 100%;
+    overflow: hidden;
+    margin: 20px 0 0 0;
+    display: inline-block;
+    color: #444;
+    font-size: 12px;
+}
+.postmetadata a{
+	color: #999;
+	text-decoration: none;
+}
+/*阅读全文按钮行内元素右浮动设置宽高背景颜色和字体颜色*/
+.post-yd{
+	display: inline-block;
+	width: 5em;
+	line-height: 2em;
+	text-align: center;
+	background:#33B0CA ;
+	color: #FFFFFF !important;
+	border-radius: 3px;
+	float: right;
+}
+.post-yd:hover{
+	background:#24546B ;
+	transition: 0.3s;
+}
+/*leftbox end*/
+/*rightbox*/
+#rightbox{
+	width: 28%;
+	float: right;
+	overflow: hidden;
+}
+/*文章样式*/
+.wz{
+	width: 100%;
+	display: inline-block;
+	margin: 10px 0px;
+	border-bottom: 1px gray solid;
+	padding-bottom: 10px;
+	background: #FFF;
+}
+/*文章缩略图样式*/
+.wzimg{
+	width: 220px;
+	height: 140px;
+	overflow: hidden;
+	float: left;
+	border-radius: 5px;
+	border: 1px gray solid;
+	margin: 10px 10px 5px 10px;
+}
+.wzimg img:hover{
+	transform: scale(1.2);
+	opacity: 0.9;
+	transition: 0.4s;
+}
+/*文章摘要字体颜色样式*/
+.entry p{
+	color: #444;
+}
+/*文章标题字体大小颜色粗细设置*/
+.post-right > h2 > a{
+	font-size: 18px;
+	font-weight: 540;
+	color: #666;
+	text-decoration: none;
+	display: inline-block;
+}
+/*文章标题鼠标滑过样式*/
+.post-right > h2 > a:hover{
+	color: #33B0CA ;
+	transform: translateX(10px);
+	transition: 0.5s;
+}
+#zxwz a{
+	text-decoration: none;
+	color:#040B08;
+}
+/*rightbox end*/
+#footer{
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+
+/*置顶文章样式结束*/
+
+/*最新文章开始*/
+.wztitle{
+	border-bottom: 3px black solid;
+	background: #FFF;
+}
+#zxwz{
+	display: block;
+	font-family:"microsoft yahei";
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top: 10px;
+	color: #993333;
+	border-left: 2px #C4534F solid;
+	padding-left: 10px;
+}
+/*最新文章结束*/
+/*页面当前位置去除默认样式，设置颜色*/
+#route a{
+	text-decoration: none;
+	color: #6A6F77;
+}
+#route a:hover{
+	color: #3598DB;
+	transition: 0.4s;
+}
+

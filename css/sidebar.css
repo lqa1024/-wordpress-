@@ -1,0 +1,51 @@
+/*去除侧边栏默认点样式*/
+#sidebar ul li{
+	list-style: none;
+	background: #FFF;
+}
+/*sidebar对齐*/
+#sidebar ul{
+	margin: 0px;
+	padding: 0px;
+}
+#sidebar ul li{
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+/*widgettitle居中样式*/
+.widgettitle{
+	text-align:left;
+	padding: 10px 0px;
+	font-size: 18px;
+}
+/*搜索栏样式*/
+#searchsubmit{
+	display: inline-block;
+}
+.sidebar ul li div{
+	margin: 0 auto;
+}
+#s{
+	margin: 5px 15px;
+	font-size:1em;
+	height:1.4em;
+	border-radius:4px;
+	border:1px solid #c8cccf;
+	color:#6a6f77;
+}
+/*搜索按钮样式*/
+#searchsubmit{
+	text-decoration: none; 
+	background-color: #2f435e;
+	color:#f2f2f2;
+	height:30px;
+	font-size: 18px;
+	border-radius:3px;
+	border-width: 0px;
+}
+#searchsubmit:hover{
+	opacity: 0.8;
+	color: white;
+	transition: 0.5s;
+}
+/*搜索栏结束*/

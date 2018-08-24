@@ -1,0 +1,59 @@
+/*内容页背景字体颜色*/
+.wzContent{
+	background: #fff;
+	color: #666;
+}
+/*内容内边距*/
+.single-content{
+	padding: 12px 20px
+}
+.single-content p{
+	margin: 5px 0 10px;
+}
+/*内容h2标题样式*/
+.wzContent h2{
+	font-weight: bold;
+    background: #ebebeb;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin: 15px -15px 10px -15px;
+    padding: 6px 20px;
+    border-left: 5px solid #2f889a;
+    border-right: 5px solid #2f889a;
+}
+/*h2标题去除默认下划线*/
+.wzContent h2 > a{
+	text-decoration: none;
+	color: #666;
+}
+/*内容h3标题样式*/
+.wzContent h3{
+	font-weight: bold;
+    background: #ebebeb;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 10px 0px 10px -15px;
+    display: inline-block;
+    /*宽度根据内容变化*/
+    width: auto;
+    text-align:left;
+    /*单独设置右线框样式*/
+    border-right: 5px solid #2f889a;
+}
+/*图片样式*/
+/*图片左对齐*/
+.alignleft {
+   display:inline;
+   float:left;
+}
+/*图片右对齐*/
+.alignright {
+   display:inline;
+   float:right;
+}
+/*图片居中*/
+.aligncenter {
+   display:block;
+   margin: 0 auto;
+}
